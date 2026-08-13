@@ -10,9 +10,10 @@
   Run `npm run dev` to start the development server.
 
   
+  
   ## 📸 Project Screenshots
 
-### 🏠 Home Page
+###   🏠 Home Page
 
 ![Home Page](screenshots/home.png)
 
@@ -23,3 +24,4 @@
 ### 🎯 Result Page
 
 ![Result Page](screenshots/result.png)
+
