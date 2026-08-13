@@ -1,0 +1,37 @@
+[
+  {
+    "id": "severe_breathing",
+    "keywords": ["can't breathe", "cannot breathe", "severe breathing", "gasping", "blue lips"],
+    "features": ["breathing_difficulty"],
+    "require_severe": true,
+    "message": "Severe breathing difficulty can be urgent. Seek emergency medical care immediately if breathing is severely impaired."
+  },
+  {
+    "id": "severe_chest_pain",
+    "keywords": ["crushing chest pain", "severe chest pain", "chest pain radiating", "heart attack"],
+    "features": ["chest_pain"],
+    "require_severe": true,
+    "message": "Severe chest pain may require prompt medical attention. If pain is severe, sudden, or accompanied by shortness of breath, seek emergency care."
+  },
+  {
+    "id": "loss_of_consciousness",
+    "keywords": ["passed out", "unconscious", "lost consciousness", "fainted and did not wake"],
+    "features": [],
+    "require_severe": false,
+    "message": "Loss of consciousness can be serious. Seek urgent medical evaluation."
+  },
+  {
+    "id": "severe_confusion",
+    "keywords": ["severe confusion", "can't stay awake", "disoriented suddenly", "altered mental status"],
+    "features": [],
+    "require_severe": false,
+    "message": "Sudden severe confusion may require urgent medical assessment."
+  },
+  {
+    "id": "severe_allergic",
+    "keywords": ["throat swelling", "tongue swelling", "anaphylaxis", "severe allergic reaction"],
+    "features": [],
+    "require_severe": false,
+    "message": "Signs of a severe allergic reaction can be life-threatening. Seek emergency care immediately."
+  }
+]

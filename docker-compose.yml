@@ -1,0 +1,35 @@
+# Phase 12: Docker Compose will orchestrate backend, frontend, and Ollama.
+# Phase 1 provides a minimal skeleton only.
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./backend:/app/backend
+      - ./models:/app/models
+      - ./data:/app/data
+    command: >
+      uvicorn app.main:app
+      --host 0.0.0.0
+      --port 8000
+      --app-dir backend
+    profiles:
+      - full
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_BASE_URL=http://localhost:8000
+    profiles:
+      - full
+
+# Ollama and full multi-service setup will be added in Phase 12.

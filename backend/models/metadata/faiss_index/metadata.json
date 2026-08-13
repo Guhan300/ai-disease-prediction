@@ -1,0 +1,37 @@
+[
+  {
+    "chunk_id": "cd88c7dd-95f2-4f73-8d8e-f167e76a2d69",
+    "text": "# Model Estimates vs Medical Diagnosis\n\nMedAI uses a trained machine-learning classifier to rank possible conditions from\nstructured symptom features extracted during conversation.\n\n## What the model does\n\n- Converts symptom presence into features\n- Outputs class scores for educational ranking\n- Can be explained with feature-contribution methods such as SHAP\n\n## What the model does not do\n\n- Confirm a medical diagnosis\n- Replace clinical examination or laboratory tests\n- Prescribe medication\n- Provide emergency triage guarantees\n\n## Safety notes",
+    "source": "model_limitations.md",
+    "document": "model_limitations",
+    "section": "general"
+  },
+  {
+    "chunk_id": "c5a3f328-7f7d-4a7d-981f-3f48bac0bf65",
+    "text": "If symptoms suggest an emergency (severe breathing difficulty, severe chest pain,\nloss of consciousness, severe allergic reaction), seek appropriate emergency care\nimmediately.",
+    "source": "model_limitations.md",
+    "document": "model_limitations",
+    "section": "general"
+  },
+  {
+    "chunk_id": "69a58587-f5b9-4062-bd74-92f34cc6bf45",
+    "text": "# Educational Symptom Reference Notes\n\nThese notes are for educational RAG context only. They are not clinical guidelines\nand must not be treated as personalized medical advice.\n\n## Fever\n\nFever is a temporary rise in body temperature often linked to infection or inflammation.\nCommon associated symptoms can include chills, sweating, headache, and fatigue.\nSeek urgent care for very high fever with confusion, stiff neck, severe breathing\ndifficulty, or persistent vomiting.\n\n## Cough and Cold",
+    "source": "symptom_reference.md",
+    "document": "symptom_reference",
+    "section": "general"
+  },
+  {
+    "chunk_id": "9efb1cb1-7c50-4cae-bfb1-ec8f91ab5599",
+    "text": "A common cold often involves runny nose, sore throat, mild cough, and sneezing.\nInfluenza more often includes higher fever, body aches, and marked fatigue.\nPersistent cough with breathlessness or chest pain needs professional evaluation.\n\n## Breathing Difficulty\n\nShortness of breath can occur with respiratory infections, asthma flares, and other\nconditions. Sudden severe breathing trouble, blue lips, or inability to speak full\nsentences may require emergency care.\n\n## Gastrointestinal Symptoms\n\nNausea, vomiting, diarrhea, and abdominal pain can occur with gastroenteritis and\nother illnesses. Watch for dehydration, blood in stool, severe pain, or high fever.\n\n## Headache and Migraine",
+    "source": "symptom_reference.md",
+    "document": "symptom_reference",
+    "section": "general"
+  },
+  {
+    "chunk_id": "e2443942-18ad-479c-89b8-3aa2e906cb26",
+    "text": "Headaches have many causes. Migraine may include nausea and light sensitivity.\nSudden worst-ever headache, neurological weakness, or confusion needs urgent care.\n\n## Skin Rash and Itching\n\nRashes may relate to allergy, viral illness, or other dermatologic conditions.\nDifficulty breathing with rash/swelling can signal a severe allergic reaction.\n\n## Important Limitation\n\nSimilar symptoms appear across many conditions. Only a qualified clinician can\ndiagnose and treat. Educational ML estimates are not diagnoses.",
+    "source": "symptom_reference.md",
+    "document": "symptom_reference",
+    "section": "general"
+  }
+]

@@ -1,0 +1,2 @@
+# Place raw disease datasets here (CSV).
+# Configure path via DATASET_PATH in .env

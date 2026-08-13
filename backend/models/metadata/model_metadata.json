@@ -1,0 +1,166 @@
+{
+  "model_name": "logistic_regression",
+  "model_version": "1.0.0",
+  "training_date": "2026-08-13T10:51:52.715444+00:00",
+  "features": [
+    "fever",
+    "cough",
+    "headache",
+    "fatigue",
+    "body_pain",
+    "sore_throat",
+    "breathing_difficulty",
+    "nausea",
+    "vomiting",
+    "diarrhea",
+    "abdominal_pain",
+    "chest_pain",
+    "rash",
+    "dizziness",
+    "joint_pain",
+    "runny_nose",
+    "chills",
+    "loss_of_appetite",
+    "sweating",
+    "itching"
+  ],
+  "classes": [
+    "Allergy",
+    "Bronchial Asthma",
+    "Chicken pox",
+    "Common Cold",
+    "Dengue",
+    "Gastroenteritis",
+    "Hypertension",
+    "Influenza",
+    "Jaundice",
+    "Malaria",
+    "Migraine",
+    "Pneumonia",
+    "Tuberculosis",
+    "Typhoid",
+    "Urinary tract infection"
+  ],
+  "primary_metric": "macro_f1",
+  "primary_metric_validation_score": 0.7153910469705796,
+  "metrics": {
+    "validation_best": {
+      "accuracy": 0.7161572052401747,
+      "precision_macro": 0.7253931743637625,
+      "recall_macro": 0.7172672915319974,
+      "macro_f1": 0.7153910469705796,
+      "weighted_f1": 0.7171672617415339,
+      "roc_auc_weighted_ovr": 0.9751804488158803
+    },
+    "test": {
+      "accuracy": 0.7347826086956522,
+      "precision_macro": 0.7419198671985049,
+      "recall_macro": 0.7273457588163468,
+      "macro_f1": 0.72967585516324,
+      "weighted_f1": 0.7356583716046353,
+      "roc_auc_weighted_ovr": 0.9749545525440624
+    },
+    "comparison": {
+      "logistic_regression": {
+        "validation": {
+          "accuracy": 0.7161572052401747,
+          "precision_macro": 0.7253931743637625,
+          "recall_macro": 0.7172672915319974,
+          "macro_f1": 0.7153910469705796,
+          "weighted_f1": 0.7171672617415339,
+          "roc_auc_weighted_ovr": 0.9751804488158803
+        }
+      },
+      "random_forest": {
+        "validation": {
+          "accuracy": 0.6462882096069869,
+          "precision_macro": 0.6588023305670364,
+          "recall_macro": 0.6455823098470156,
+          "macro_f1": 0.6450820247484842,
+          "weighted_f1": 0.6480169966229697,
+          "roc_auc_weighted_ovr": 0.9603817698727108
+        }
+      },
+      "xgboost": {
+        "validation": {
+          "accuracy": 0.7117903930131004,
+          "precision_macro": 0.7203281771548026,
+          "recall_macro": 0.7114993176757881,
+          "macro_f1": 0.7113963394446066,
+          "weighted_f1": 0.7135466653124877,
+          "roc_auc_weighted_ovr": 0.9677427848551267
+        }
+      },
+      "svm": {
+        "validation": {
+          "accuracy": 0.7117903930131004,
+          "precision_macro": 0.7202308561751285,
+          "recall_macro": 0.712822847087553,
+          "macro_f1": 0.7092780096535904,
+          "weighted_f1": 0.7103800919871207,
+          "roc_auc_weighted_ovr": 0.9727611024681645
+        }
+      }
+    }
+  },
+  "dataset": {
+    "path": "C:\\Users\\guhan\\Desktop\\Projects\\local-ai-disease-risk\\backend\\data\\raw\\disease_dataset.csv",
+    "n_rows": 1530,
+    "n_columns": 21,
+    "target_column": "prognosis",
+    "feature_columns": [
+      "fever",
+      "cough",
+      "headache",
+      "fatigue",
+      "body_pain",
+      "sore_throat",
+      "breathing_difficulty",
+      "nausea",
+      "vomiting",
+      "diarrhea",
+      "abdominal_pain",
+      "chest_pain",
+      "rash",
+      "dizziness",
+      "joint_pain",
+      "runny_nose",
+      "chills",
+      "loss_of_appetite",
+      "sweating",
+      "itching"
+    ],
+    "missing_values": {},
+    "duplicate_rows": 270,
+    "constant_columns": [],
+    "class_counts": {
+      "Jaundice": 120,
+      "Allergy": 120,
+      "Influenza": 120,
+      "Bronchial Asthma": 120,
+      "Common Cold": 120,
+      "Malaria": 120,
+      "Dengue": 120,
+      "Pneumonia": 120,
+      "Tuberculosis": 120,
+      "Gastroenteritis": 120,
+      "Migraine": 120,
+      "Typhoid": 120,
+      "Hypertension": 120,
+      "Chicken pox": 120,
+      "Urinary tract infection": 120
+    },
+    "n_classes": 15,
+    "imbalance_ratio": 1.0,
+    "notes": [
+      "270 duplicate rows detected.",
+      "Dropped 270 duplicate rows for training."
+    ]
+  },
+  "artifact_paths": {
+    "model": "C:\\Users\\guhan\\Desktop\\Projects\\local-ai-disease-risk\\backend\\models\\trained\\best_model.joblib",
+    "preprocessor": "C:\\Users\\guhan\\Desktop\\Projects\\local-ai-disease-risk\\backend\\models\\trained\\preprocessor.joblib",
+    "label_encoder": "C:\\Users\\guhan\\Desktop\\Projects\\local-ai-disease-risk\\backend\\models\\trained\\label_encoder.joblib"
+  },
+  "disclaimer": "Educational model-based estimates only \u2014 not a medical diagnosis."
+}
