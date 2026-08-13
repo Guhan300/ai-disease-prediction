@@ -1,5 +1,24 @@
 # MedAI — Conversational Disease Risk Prediction
 
+
+
+
+  
+  ## 📸 Project Screenshots
+
+###   🏠 Home Page
+
+![Home Page](screenshots/home.png)
+
+### 📊 Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+### 🎯 Result Page
+
+![Result Page](screenshots/result.png)
+
+
 Educational/research ChatGPT-style symptom assistant. A **trained local ML model**
 produces disease/risk estimates. A **local LLM (Ollama)** handles conversation and
 explanations only. Optional **local RAG** adds educational context.
