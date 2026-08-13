@@ -116,3 +116,4 @@ pytest tests -q
 - Synthetic dataset is for local demos unless you supply a vetted Kaggle CSV
 - Model scores are not calibrated medical probabilities
 - Safety rules are limited and not an emergency triage system
+image.png
